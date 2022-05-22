@@ -70,7 +70,7 @@ namespace Restaurant_AD0557
             this.btnTheDrink1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheDrink1.Location = new System.Drawing.Point(47, 254);
             this.btnTheDrink1.Name = "btnTheDrink1";
-            this.btnTheDrink1.Size = new System.Drawing.Size(123, 51);
+            this.btnTheDrink1.Size = new System.Drawing.Size(137, 51);
             this.btnTheDrink1.TabIndex = 3;
             this.btnTheDrink1.Text = "Order Now";
             this.btnTheDrink1.UseVisualStyleBackColor = false;

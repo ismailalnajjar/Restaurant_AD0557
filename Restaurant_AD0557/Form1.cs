@@ -15,13 +15,16 @@ namespace Restaurant_AD0557
     {
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\source\repos\Restaurant_AD0557\Restaurant_AD0557\Database1.mdf;Integrated Security=True");
         SqlDataAdapter Da;
+        DataSet Ds = new DataSet();
+        
         
 
         public RestaurantAcc()
         {
             InitializeComponent();
-           
-           
+            Da = new SqlDataAdapter("Select * from LOGIN",conn);
+            Da.Fill(Ds, "LOG");
+            dataGridView1.DataSource = Ds.Tables["LOG"];
             
         }
 
@@ -32,7 +35,7 @@ namespace Restaurant_AD0557
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            txtUserName.Focus();
             String Username, Password;
 
             Username = txtUserName.Text;
@@ -69,7 +72,7 @@ namespace Restaurant_AD0557
             }
             catch
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Error1");
             }
             finally
             {
@@ -87,7 +90,12 @@ namespace Restaurant_AD0557
             txtUserName.Clear();
             txtPassword.Clear();
 
-            txtUserName.Focus();
+            
         }
+
+       
+
+
+        
     } 
 }

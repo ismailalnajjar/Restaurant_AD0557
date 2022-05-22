@@ -37,11 +37,11 @@ namespace Restaurant_AD0557
             this.btnMain = new System.Windows.Forms.Button();
             this.btnTheDrinks = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnTotalPrice = new System.Windows.Forms.Button();
             this.iceControl1 = new Restaurant_AD0557.IceControl();
             this.theDrinkControl1 = new Restaurant_AD0557.TheDrinkControl();
             this.secControl1 = new Restaurant_AD0557.secControl();
             this.firstControl1 = new Restaurant_AD0557.firstControl();
-            this.btnTotalPrice = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -130,6 +130,18 @@ namespace Restaurant_AD0557
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnTotalPrice
+            // 
+            this.btnTotalPrice.BackColor = System.Drawing.Color.Gold;
+            this.btnTotalPrice.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotalPrice.Location = new System.Drawing.Point(350, 585);
+            this.btnTotalPrice.Name = "btnTotalPrice";
+            this.btnTotalPrice.Size = new System.Drawing.Size(290, 64);
+            this.btnTotalPrice.TabIndex = 7;
+            this.btnTotalPrice.Text = "Total The Price";
+            this.btnTotalPrice.UseVisualStyleBackColor = false;
+            this.btnTotalPrice.Click += new System.EventHandler(this.btnTotalPrice_Click);
+            // 
             // iceControl1
             // 
             this.iceControl1.Location = new System.Drawing.Point(60, 141);
@@ -158,18 +170,6 @@ namespace Restaurant_AD0557
             this.firstControl1.Name = "firstControl1";
             this.firstControl1.Size = new System.Drawing.Size(933, 438);
             this.firstControl1.TabIndex = 1;
-            // 
-            // btnTotalPrice
-            // 
-            this.btnTotalPrice.BackColor = System.Drawing.Color.Gold;
-            this.btnTotalPrice.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTotalPrice.Location = new System.Drawing.Point(350, 585);
-            this.btnTotalPrice.Name = "btnTotalPrice";
-            this.btnTotalPrice.Size = new System.Drawing.Size(254, 64);
-            this.btnTotalPrice.TabIndex = 7;
-            this.btnTotalPrice.Text = "Total The Price";
-            this.btnTotalPrice.UseVisualStyleBackColor = false;
-            this.btnTotalPrice.Click += new System.EventHandler(this.btnTotalPrice_Click);
             // 
             // frmMenu
             // 
