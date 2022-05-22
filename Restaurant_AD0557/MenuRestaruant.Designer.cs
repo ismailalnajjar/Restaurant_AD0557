@@ -31,16 +31,17 @@ namespace Restaurant_AD0557
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMain = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnIceCream = new System.Windows.Forms.Button();
             this.btnTheoffers = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMain = new System.Windows.Forms.Button();
             this.btnTheDrinks = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnIceCream = new System.Windows.Forms.Button();
             this.iceControl1 = new Restaurant_AD0557.IceControl();
             this.theDrinkControl1 = new Restaurant_AD0557.TheDrinkControl();
             this.secControl1 = new Restaurant_AD0557.secControl();
             this.firstControl1 = new Restaurant_AD0557.firstControl();
+            this.btnTotalPrice = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,28 +57,17 @@ namespace Restaurant_AD0557
             this.panel1.Size = new System.Drawing.Size(933, 123);
             this.panel1.TabIndex = 0;
             // 
-            // btnMain
+            // btnIceCream
             // 
-            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnMain.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMain.Location = new System.Drawing.Point(243, 13);
-            this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(116, 44);
-            this.btnMain.TabIndex = 0;
-            this.btnMain.Text = "Main";
-            this.btnMain.UseVisualStyleBackColor = true;
-            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(376, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(126, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnIceCream.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIceCream.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIceCream.Location = new System.Drawing.Point(508, 63);
+            this.btnIceCream.Name = "btnIceCream";
+            this.btnIceCream.Size = new System.Drawing.Size(145, 44);
+            this.btnIceCream.TabIndex = 6;
+            this.btnIceCream.Text = "Ice Cream";
+            this.btnIceCream.UseVisualStyleBackColor = true;
+            this.btnIceCream.Click += new System.EventHandler(this.btnIceCream_Click);
             // 
             // btnTheoffers
             // 
@@ -91,6 +81,29 @@ namespace Restaurant_AD0557
             this.btnTheoffers.Text = "The Offers";
             this.btnTheoffers.UseVisualStyleBackColor = true;
             this.btnTheoffers.Click += new System.EventHandler(this.btnTheoffers_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(376, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(126, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMain
+            // 
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnMain.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMain.Location = new System.Drawing.Point(243, 13);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(116, 44);
+            this.btnMain.TabIndex = 0;
+            this.btnMain.Text = "Main";
+            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // btnTheDrinks
             // 
@@ -116,18 +129,6 @@ namespace Restaurant_AD0557
             this.btnClose.TabIndex = 4;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnIceCream
-            // 
-            this.btnIceCream.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIceCream.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIceCream.Location = new System.Drawing.Point(508, 63);
-            this.btnIceCream.Name = "btnIceCream";
-            this.btnIceCream.Size = new System.Drawing.Size(145, 44);
-            this.btnIceCream.TabIndex = 6;
-            this.btnIceCream.Text = "Ice Cream";
-            this.btnIceCream.UseVisualStyleBackColor = true;
-            this.btnIceCream.Click += new System.EventHandler(this.btnIceCream_Click);
             // 
             // iceControl1
             // 
@@ -158,12 +159,25 @@ namespace Restaurant_AD0557
             this.firstControl1.Size = new System.Drawing.Size(933, 438);
             this.firstControl1.TabIndex = 1;
             // 
+            // btnTotalPrice
+            // 
+            this.btnTotalPrice.BackColor = System.Drawing.Color.Gold;
+            this.btnTotalPrice.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotalPrice.Location = new System.Drawing.Point(350, 585);
+            this.btnTotalPrice.Name = "btnTotalPrice";
+            this.btnTotalPrice.Size = new System.Drawing.Size(254, 64);
+            this.btnTotalPrice.TabIndex = 7;
+            this.btnTotalPrice.Text = "Total The Price";
+            this.btnTotalPrice.UseVisualStyleBackColor = false;
+            this.btnTotalPrice.Click += new System.EventHandler(this.btnTotalPrice_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1053, 610);
+            this.ClientSize = new System.Drawing.Size(1053, 651);
+            this.Controls.Add(this.btnTotalPrice);
             this.Controls.Add(this.iceControl1);
             this.Controls.Add(this.btnTheDrinks);
             this.Controls.Add(this.theDrinkControl1);
@@ -174,6 +188,7 @@ namespace Restaurant_AD0557
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenu";
             this.Text = "MenuRestaruant";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -193,5 +208,6 @@ namespace Restaurant_AD0557
         private TheDrinkControl theDrinkControl1;
         private System.Windows.Forms.Button btnIceCream;
         private IceControl iceControl1;
+        private System.Windows.Forms.Button btnTotalPrice;
     }
 }

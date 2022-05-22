@@ -35,11 +35,14 @@ namespace Restaurant_AD0557
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(151, 315);
+            this.btnLogin.Location = new System.Drawing.Point(597, 43);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(132, 67);
             this.btnLogin.TabIndex = 0;
@@ -49,7 +52,7 @@ namespace Restaurant_AD0557
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(504, 315);
+            this.btnExit.Location = new System.Drawing.Point(597, 146);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(128, 67);
             this.btnExit.TabIndex = 1;
@@ -95,11 +98,36 @@ namespace Restaurant_AD0557
             this.txtPassword.Size = new System.Drawing.Size(180, 26);
             this.txtPassword.TabIndex = 5;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(261, 261);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(305, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(597, 252);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(132, 67);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // RestaurantAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 521);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.lblPassword);
@@ -108,6 +136,8 @@ namespace Restaurant_AD0557
             this.Controls.Add(this.btnLogin);
             this.Name = "RestaurantAcc";
             this.Text = "Restaruant Account";
+            this.Load += new System.EventHandler(this.RestaurantAcc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +151,8 @@ namespace Restaurant_AD0557
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

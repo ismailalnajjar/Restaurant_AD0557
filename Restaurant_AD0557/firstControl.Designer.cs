@@ -103,6 +103,7 @@ namespace Restaurant_AD0557
             this.btnfirstCo.TabIndex = 8;
             this.btnfirstCo.Text = "Order Now";
             this.btnfirstCo.UseVisualStyleBackColor = false;
+            this.btnfirstCo.Click += new System.EventHandler(this.btnfirstCo_Click);
             // 
             // firstControl
             // 

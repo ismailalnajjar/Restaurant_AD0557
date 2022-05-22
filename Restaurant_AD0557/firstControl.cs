@@ -16,5 +16,10 @@ namespace Restaurant_AD0557
         {
             InitializeComponent();
         }
+
+        private void btnfirstCo_Click(object sender, EventArgs e)
+        {
+            int Burger = 12;
+        }
     }
 }

@@ -45,5 +45,16 @@ namespace Restaurant_AD0557
         {
             iceControl1.BringToFront();
         }
+
+        private void btnTotalPrice_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
