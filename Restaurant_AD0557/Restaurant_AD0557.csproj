@@ -46,16 +46,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="firstControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="firstControl.Designer.cs">
+      <DependentUpon>firstControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IceControl.Designer.cs">
+      <DependentUpon>IceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRestaruant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuRestaruant.Designer.cs">
+      <DependentUpon>MenuRestaruant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="secControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="secControl.Designer.cs">
+      <DependentUpon>secControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheDrinkControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TheDrinkControl.Designer.cs">
+      <DependentUpon>TheDrinkControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="firstControl.resx">
+      <DependentUpon>firstControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IceControl.resx">
+      <DependentUpon>IceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRestaruant.resx">
+      <DependentUpon>MenuRestaruant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +107,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="secControl.resx">
+      <DependentUpon>secControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheDrinkControl.resx">
+      <DependentUpon>TheDrinkControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
